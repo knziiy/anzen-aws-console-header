@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Anzen AWS Console Header",
+    "version": "1.0",
+    "description": "作業に注意が必要なAWSアカウントのAWSコンソールのヘッダー色を変更して視認性と安全性を向上させます",
+    "permissions": ["storage"],
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": ["https://*.console.aws.amazon.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AWS Header Color Settings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      /* マッピング行のレイアウト */
+      .mapping-row {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+      .mapping-row input.acct {
+        width: 160px;
+        padding: 4px;
+      }
+      .mapping-row input.color {
+        width: 40px;
+        height: 24px;
+        border: none;
+        padding: 0;
+      }
+      .mapping-row button.remove {
+        background: #d9534f;
+        color: #fff;
+        border: none;
+        padding: 4px 8px;
+        cursor: pointer;
+      }
+      #controls {
+        margin-top: 16px;
+      }
+      #status {
+        margin-left: 16px;
+        color: green;
+      }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Configure AWS Header Color</h1>
+        <p>
+          検証環境など安全なアカウントとみなすAWSアカウントIDを指定してください。<br
+          以下のリストにないAWSアカウントの場合は、Management Consoleのヘッダ色を指定した色にします。
+        </p>
+        
+        <h5>以下のリストにないAWSアカウントの場合のヘッダの色</h5>
+        <input id="defaultColor" type="color" class="form-control form-control-color w-25" value="#c12525">
+        
+
+        <h5 class="mt-4">安全とみなすAWSアカウントリスト</h5>
+        <ul id="list" class="list-group w-50 mb-3"></ul>
+        <div id="controls">
+            <button id="add" class="btn btn-secondary mr-2">追加</button>
+            <button id="save" class="btn btn-primary">保存</button>
+            <span id="status" class="ml-3 text-success"></span>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
+
+

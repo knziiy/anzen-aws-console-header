@@ -8,7 +8,7 @@ AWSアカウントIDごとにヘッダー色を指定するのではなく、***
 
 そのため、非常に多くのアカウントで作業を行う方にとっては、自分の検証環境など、安全と見なすAWSアカウントのリストだけを一度登録しておけば、その他の本番環境用アカウントなどは増減があっても設定を変更することなく、自動的に色が変わります。
 
-![anzen-aws-console-header](anzen-aws-console-header-image.png)
+![anzen-aws-console-header](images/anzen-aws-console-header-image.png)
 
 ## 機能
 
@@ -27,7 +27,7 @@ AWSアカウントIDごとにヘッダー色を指定するのではなく、***
 1. AWSコンソールにアクセスすると、"設定したAWSアカウントIDではない場合に"ヘッダー部分が設定で指定した色で表示されます
 2. オプションページ（拡張機能の詳細から「オプション」）で変更対象外とするアカウントIDを設定できます
 
-![option-gui](option-gui.png)
+![option-gui](images/option-gui.png)
 
 
 ## License
